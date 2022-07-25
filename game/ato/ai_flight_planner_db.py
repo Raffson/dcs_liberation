@@ -125,6 +125,7 @@ from pydcs_extensions.f104.f104 import VSN_F104G, VSN_F104S, VSN_F104S_AG
 from pydcs_extensions.f22a.f22a import F_22A
 from pydcs_extensions.hercules.hercules import Hercules
 from pydcs_extensions.jas39.jas39 import JAS39Gripen, JAS39Gripen_AG
+from pydcs_extensions.su30.su30 import Su_30MKA, Su_30MKI, Su_30MKM, Su_30SM
 from pydcs_extensions.su57.su57 import Su_57
 from pydcs_extensions.uh60l.uh60l import KC130J, UH_60L
 from .flighttype import FlightType
@@ -146,6 +147,10 @@ CAP_CAPABLE = [
     Su_33,
     J_11A,
     Su_30,
+    Su_30MKA,
+    Su_30MKI,
+    Su_30MKM,
+    Su_30SM,
     Su_27,
     MiG_29S,
     F_16C_50,
@@ -225,6 +230,10 @@ CAS_CAPABLE = [
     F_4E,
     S_3B,
     Su_30,
+    Su_30MKA,
+    Su_30MKI,
+    Su_30MKM,
+    Su_30SM,
     MiG_29S,
     MiG_27K,
     MiG_29A,
@@ -298,6 +307,10 @@ SEAD_CAPABLE = [
     Su_17M4,
     Su_34,
     Su_30,
+    Su_30MKA,
+    Su_30MKI,
+    Su_30MKM,
+    Su_30SM,
     MiG_27K,
     Tornado_GR4,
 ]
@@ -361,6 +374,10 @@ STRIKE_CAPABLE = [
     Su_34,
     Su_33,
     Su_30,
+    Su_30MKA,
+    Su_30MKI,
+    Su_30MKM,
+    Su_30SM,
     Su_27,
     MiG_29S,
     MiG_29G,
@@ -417,6 +434,10 @@ ANTISHIP_CAPABLE = [
     JF_17,
     Su_34,
     Su_30,
+    Su_30MKA,
+    Su_30MKI,
+    Su_30MKM,
+    Su_30SM,
     Tornado_IDS,
     Tornado_GR4,
     AV8BNA,
@@ -434,8 +455,6 @@ ANTISHIP_CAPABLE = [
 # https://github.com/dcs-liberation/dcs_liberation/issues/1703
 RUNWAY_ATTACK_CAPABLE = [
     JF_17,
-    Su_34,
-    Su_30,
     Tornado_IDS,
     M_2000C,
     H_6J,
@@ -462,6 +481,10 @@ RUNWAY_ATTACK_CAPABLE = [
     Su_34,
     Su_33,
     Su_30,
+    Su_30MKA,
+    Su_30MKI,
+    Su_30MKM,
+    Su_30SM,
     Su_27,
     MiG_29S,
     MiG_29G,
